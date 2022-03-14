@@ -1,0 +1,26 @@
+@charset "UTF-8";
+html,body,div,span,object,iframe,h1,h2,h3,h4,p,blockquote,
+a,b,table,canvas,ol,ul,li,menu,nav,tr,td,th,table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFE1D9;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
