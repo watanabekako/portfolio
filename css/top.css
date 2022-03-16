@@ -66,26 +66,15 @@ table {
     padding-bottom: 150px;
 }
 
-.wrap-contents {
-        display: flex;
-        justify-content: space-between;
-        align-items: left;
-        flex-wrap: wrap;
+
+.height20 {
+    display: flex;
+    color: #101785;
+    text-align: left;
+    flex-wrap: wrap;
+    height: 200px;
+    padding-bottom: 150px;
 }
-.wrap-contents:not(:last-child) {
-    margin-bottom: 80px;
-  }
-  
-  .wrap-contents:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  
-  .wrap-contents img {
-    display: block;
-    width: 48%;
-    height: auto;
-  }
-  
 
 .tex-line
 {
@@ -108,28 +97,33 @@ table {
     display: flex;
     flex-direction: column;
     padding:  0px 20px;
-    
     flex:1;
 }
-
 .inner-photo ::after{
     display: block;
       padding-top: 20px;
       content: '';
     }
 .inner-photo img{
-    width: 400px;
+    width: 100%;
     padding-bottom: 50px;
 }
 
-.inner-photo-min {
+.inner-photo-me {
     display: flex;
     flex-direction: column;
     padding:  50px;
 }
 
-.inner-photo-min img{
+.inner-photo-me img{
     border-radius:50%;
+}
+
+.inner-text-me {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding:  50px;
 }
 
 .inner-text {
@@ -138,6 +132,7 @@ table {
     flex: 1;
     padding:  50px;
 }
+
 /* 何でもセンター */
 .centering{
     display: flex;
@@ -175,8 +170,8 @@ table {
     border: 1px solid #101785;
     transition: 0.3s0;
     text-decoration: none;
-    width: 80%;
-    margin: 30px;
+    width: 60%;
+    margin: 0px;
   }
   
   /* マウスオーバー時 */
@@ -185,27 +180,4 @@ table {
     color:#FFE1D9;
   }
 
-   /* ホバーで画像切り替えるよ */
-  .switcher {
-    width: 70%;
-    height: 70%;
-    margin: 50px auto;
-    position: relative;
-    overflow: hidden;
 
-}
-.switcher img {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.switcher img a {
-    width: 400px;
-}
- /* マウスオーバー時 */
- .switcher:hover img:nth-of-type(2) {
-    opacity: 0;
-	transition: opacity 1s;
-}
