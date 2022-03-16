@@ -39,7 +39,8 @@ table {
     margin-bottom: 150px;
 }
 .clear_box {
-    clear:  both;               /* 回り込みを解除する */
+    clear:  both;   
+    margin-bottom: 50px;            /* 回り込みを解除する */
 }
 .min-tex
 {
