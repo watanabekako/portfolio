@@ -65,16 +65,13 @@ table {
     flex-wrap: wrap;
     padding-bottom: 150px;
 }
-
-
-.height20 {
+.works-list-me {
     display: flex;
     color: #101785;
     text-align: left;
     flex-wrap: wrap;
-    height: 200px;
-    padding-bottom: 150px;
 }
+
 
 .tex-line
 {
@@ -97,7 +94,7 @@ table {
     display: flex;
     flex-direction: column;
     padding:  0px 20px;
-    flex:1;
+    flex:2;
 }
 .inner-photo ::after{
     display: block;
@@ -112,7 +109,8 @@ table {
 .inner-photo-me {
     display: flex;
     flex-direction: column;
-    padding:  50px;
+    padding: 50px;
+    
 }
 
 .inner-photo-me img{
@@ -123,7 +121,7 @@ table {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding:  50px;
+    padding: 0 50px 300px 50px;
 }
 
 .inner-text {
@@ -170,8 +168,8 @@ table {
     border: 1px solid #101785;
     transition: 0.3s0;
     text-decoration: none;
-    width: 60%;
-    margin: 0px;
+    width: 100%;
+    margin: 10px;
   }
   
   /* マウスオーバー時 */
@@ -180,4 +178,36 @@ table {
     color:#FFE1D9;
   }
 
+  .slide {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 200px;
+  }
+  
+  .slick-arrow {
+    &.slick-prev {
+      left: 10px;
+      z-index: 2;
+    }
+  
+    &.slick-next {
+      right: 10px;
+      z-index: 2;
+    }
+  }
 
+ 
+  
+  .slide-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .slick-dots{
+	bottom: 80px!important;
+}
+
+  * {
+    min-height:0;
+    min-width : 0;
+    }

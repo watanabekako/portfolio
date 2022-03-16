@@ -2,13 +2,34 @@
 <html>
   <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="./css/top.css?time=2022031"/>
-<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-<link rel="stylesheet" type="text/css" href="css/commmon.css"/>
+<link rel="stylesheet" href="./css/top.css?time=20220314"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.sliderw').slick({
+    autoplay: true,
+    dots: true,
+    fade: true,
+    cssEase: 'linear',
+    adaptiveHeight:false,
+    arrows :false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+      autoplay: false,
+      }
+    }]
+  });
+});
+</script>
+
 <style>
   body {
     font-family: "Noto Serif JP", "sans-serif";
@@ -48,7 +69,7 @@
       </div></a>
 </div><br>
 <div class="clear_box"></div>
-<div id="aboutme"class="works-list">
+<div id="aboutme"class="works-list-me">
   <div class="vertical-title"><span class="tex-line">ABOUT ME</span></div>
   <div class="inner-photo-me"><img src="./img/me.jpg" width="200px"></div>
   <div class="inner-text-me"><span class="max-tex">渡邊智香子</span><br>
@@ -73,7 +94,7 @@
       
       2004 ドイツハンブルク ハインターコンチギャラリーにて個展<br> 
       
-      2004 株式会社セガに入社。<br> <br>
+      2004 株式会社セガに入社<br> <br>
       UIデザイン、キャラクターデザイン、グッズデザイン、ローカライズ、ツール開発、デザインシステムなど２dグラフィックを印刷含め全般担当。<br> 
       世界のクラシックボードゲームで2dグラフィックデザイナー、WCCFにて2dグラフィックチーフを２期担当し、独立。<br> 
       アプリケーションやWEB、印刷物など、様々な制作をする。<br> <br>
@@ -98,16 +119,47 @@
 <div id="works"class="works-list">
         <div class="vertical-title"><span class="tex-line">AGRI GPS APP</span></div>
         <div class="inner-photo">
-          <img src="./img/lhab.jpg"　onMouseOver="this.src='./img/lha.jpg'" onMouseOut="this.src='./img/lhab.jpg'" >
+          <div class="sliderw">
+            <div><img class="slide-img" src="./img/lhaib.jpg" alt=""></div>
+            <div><img class="slide-img" src="./img/lhai.jpg" alt="アイコンバリエーション出し"></div>
+            <div><img class="slide-img" src="./img/lhicon.jpg" alt="決定、書き出し"></div>
+            <div><img class="slide-img" src="./img/lhuii.jpg" alt="UI設計アイデア"></div>
+            <div><img class="slide-img" src="./img/lhuitop.jpg" alt="決定"></div>     
+          </div>
         </div>
         <div class="inner-text"><span class="max-tex">lighthouse.inc</span><br>
-          <span class="middle-tex">JAXAなどのGPSシステムを担っているlighthouseさんのiotアプリケーションのUI。</span>
+          <span class="middle-tex">JAXAなどのGPSシステムを担っているlighthouseさんのIotアプリケーションのUI。</span>
         </div>
+</div>
+<div class="clear_box"></div>
+
+<div id="works"class="works-list">
+  <div class="vertical-title"><span class="tex-line">AGRI GPS APP</span></div>
+  <div class="inner-photo">
+    <div class="sliderw">
+      <div><img class="slide-img" src="./img/lhaib.jpg" alt=""></div>
+      <div><img class="slide-img" src="./img/lhai.jpg" alt="アイコンバリエーション出し"></div>
+      <div><img class="slide-img" src="./img/lhicon.jpg" alt="決定、書き出し"></div>
+      <div><img class="slide-img" src="./img/lhuii.jpg" alt="UI設計アイデア"></div>
+      <div><img class="slide-img" src="./img/lhuitop.jpg" alt="決定"></div>     
+    </div>
+  </div>
+  <div class="inner-text"><span class="max-tex">lighthouse.inc</span><br>
+    <span class="middle-tex">JAXAなどのGPSシステムを担っているlighthouseさんのIotアプリケーションのUI。</span>
+  </div>
 </div>
 <div class="clear_box"></div>
 <div class="works-list">
   <div class="vertical-title"><span class="tex-line">VOYAGE OF THE PLANET</span></div>
-       <div class="inner-photo"><img src="./img/DisVb.jpg"></div>
+       <div class="inner-photo">   
+         <div class="sliderw">
+        <div><img class="slide-img" src="./img/DisVb.jpg" alt=""></div>
+        <div><img class="slide-img" src="./img/DisV.jpg" alt=""></div>
+        <div><img class="slide-img" src="./img/lhicon.jpg" alt="">アイコン決定</div>
+        <div><img class="slide-img" src="./img/lhuii.jpg" alt=""></div>
+        <div><img class="slide-img" src="./img/lhuitop.jpg" alt="">決定</div>
+        
+      </div></div>
        <div class="inner-text"><span class="max-tex">BNG（Bandai Namco Games）</span><br>
        <span class="middle-tex">Facebookで遊べるコンテンツです。</span>
   </div>  
@@ -116,11 +168,14 @@
 
 <div class="works-list">
   <div class="vertical-title"><span class="tex-line">World Club Champions Football</span></div>
-       <div class="inner-photo"><img src="./img/bookh1b.jpg"></div>
+       <div class="inner-photo">
+        
+      <img src="./img/bookh1b.jpg"></div>
        <div class="inner-text"><span class="max-tex">SEGA（hitmaker/AM3）</span><br>
        <span class="middle-tex">通称WCCF。カードではなく札束を刷っていると揶揄されるぐらい、レアカードにプレミアがついていた。（一枚２０万円など）累計５億枚のカード発行枚数で、ギネスに登録された。</span>
   </div>
 </div>
+
 
   </body>
 </html>
