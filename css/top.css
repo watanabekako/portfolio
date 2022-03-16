@@ -8,10 +8,12 @@ a,b,table,canvas,ol,ul,li,menu,nav,tr,td,th,table {
     font: inherit;
     vertical-align: baseline;
 }
+html{
+    scroll-behavior: smooth;
+  }
 
 body {
     line-height: 1;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #FFE1D9;
 }
 
@@ -24,3 +26,185 @@ table {
     border-spacing: 0;
 }
 
+.womologo {
+    padding: 5% 5% 30px 5% ;
+}
+
+.mmenu {
+    padding:  0px 40px;
+    color: #101785;
+    border-right: 1px solid;
+    float: left;
+    text-align: left;
+    margin-bottom: 150px;
+}
+.clear_box {
+    clear:  both;               /* 回り込みを解除する */
+}
+.min-tex
+{
+    font-size: 10px;
+}
+.middle-tex
+{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.max-tex
+{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1em
+}
+.works-list {
+    display: flex;
+    color: #101785;
+    text-align: left;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+.wrap-contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        flex-wrap: wrap;
+}
+.wrap-contents:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  
+  .wrap-contents:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .wrap-contents img {
+    display: block;
+    width: 48%;
+    height: auto;
+  }
+  
+
+.tex-line
+{
+    font-size: 12px;
+    border-right: 1px solid #101785;
+    padding: 5px;
+}
+.vertical-title {
+    display: flex;
+    flex-direction: column;
+    transform-origin: 20% 100%;
+    transform: rotate( 90deg );
+    align-items: flex-end;
+    height: 20px;
+    padding:10px;
+    width: 10%;
+}
+
+.inner-photo {
+    display: flex;
+    flex-direction: column;
+    padding:  0px 20px;
+    
+    flex:1;
+}
+
+.inner-photo ::after{
+    display: block;
+      padding-top: 20px;
+      content: '';
+    }
+.inner-photo img{
+    width: 400px;
+    padding-bottom: 50px;
+}
+
+.inner-photo-min {
+    display: flex;
+    flex-direction: column;
+    padding:  50px;
+}
+
+.inner-photo-min img{
+    border-radius:50%;
+}
+
+.inner-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding:  50px;
+}
+/* 何でもセンター */
+.centering{
+    display: flex;
+    justify-content: center;
+}
+
+/* トップへ戻るボタン */
+.page_top_btn {
+    font-size: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #FFE1D9;
+    color: #101785;
+    border: 1px solid #101785;
+    transition: 0.3s0;
+    text-decoration: none;
+  }
+  
+  /* マウスオーバー時 */
+  .page_top_btn:hover {
+    background-color:  #101785;
+    color:#FFE1D9;
+  }
+
+  /* 共通ボタン */
+.normal_btn {
+    font-size: 16px;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #FFE1D9;
+    color: #101785;
+    border: 1px solid #101785;
+    transition: 0.3s0;
+    text-decoration: none;
+    width: 80%;
+    margin: 30px;
+  }
+  
+  /* マウスオーバー時 */
+  .normal_btn:hover {
+    background-color:  #101785;
+    color:#FFE1D9;
+  }
+
+   /* ホバーで画像切り替えるよ */
+  .switcher {
+    width: 70%;
+    height: 70%;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+
+}
+.switcher img {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.switcher img a {
+    width: 400px;
+}
+ /* マウスオーバー時 */
+ .switcher:hover img:nth-of-type(2) {
+    opacity: 0;
+	transition: opacity 1s;
+}
