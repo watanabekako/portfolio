@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/slick/slick.min.js"></script>
+<script src="<js/scrollreveal.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -23,6 +24,10 @@
     arrows :false,
   })
 });
+</script>
+<script type="text/javascript">
+  window.sr = ScrollReveal();
+  sr.reveal('.animate',{ easing:'ease-in','duration:2000','distance:100px'});
 </script>
 
 <style>
@@ -74,7 +79,7 @@
       </div></a>-->
 </div><br>
 <div class="clear_box"></div>
-<div id="aboutme"class="works-list-me">
+<div id="aboutme"class="works-list-me animate">
   <div class="vertical-title"><span class="tex-line">ABOUT ME</span></div>
   <div class="inner-photo-me"><img src="./img/me.jpg" width="200px"></div>
   <div class="inner-text-me"><span class="max-tex">渡邊智香子</span><br>
