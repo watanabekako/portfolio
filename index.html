@@ -8,10 +8,10 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/slick/slick.min.js"></script>
-<script src="<js/scrollreveal.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script type="text/javascript">
   $(function() {
   $('.sliderw').slick({
@@ -24,10 +24,6 @@
     arrows :false,
   })
 });
-</script>
-<script type="text/javascript">
-  window.sr = ScrollReveal();
-  sr.reveal('.animate',{ easing:'ease-in','duration:2000','distance:100px'});
 </script>
 
 <style>
@@ -48,7 +44,7 @@
     <a href="#page_top" class="page_top_btn">▲</a>
 
 <div id="page_top">
-    <div class="womologo">
+    <div class="womologo blurTrigger">
       <img src="./img/womo_logo.svg">
     </div>
       <div class="mmenu">
@@ -79,9 +75,9 @@
       </div></a>-->
 </div><br>
 <div class="clear_box"></div>
-<div id="aboutme"class="works-list-me animate">
+<div id="aboutme"class="works-list-me">
   <div class="vertical-title"><span class="tex-line">ABOUT ME</span></div>
-  <div class="inner-photo-me"><img src="./img/me.jpg" width="200px"></div>
+  <div class="inner-photo-me fadeLeftTrigger"><img src="./img/me.jpg" width="200px"></div>
   <div class="inner-text-me"><span class="max-tex">渡邊智香子</span><br>
     <span class="middle-tex">
 自己紹介：一目で惹かれるデザインをモットーに、日々センスを磨いている。<br>
@@ -105,7 +101,8 @@
       CM映像、編集、UIデザイン、UXデザイン、プログラム、ユーザー分析、商品アイデアとモックアップ、プレゼンテーション、DTP、インスタレーションアートなどがメイン。
       白物家電二社、東芝・シャープのデザイン部長のプロダクトゼミでデザイン思考ユーザー分析ワークショップ、カスタマージャーニー（ユーザー動線シナリオ）、
       モックアップ制作など学んだ。
-      また、DTPゼミにも在籍し、日経デザイン元編集長の森山教授にDTP技術と実際にインタビューをし書籍にするなど編集技術を学ぶ。<br> <br> 
+      また、DTPゼミにも在籍し、日経デザイン元編集長の森山教授にDTP技術と実際にインタビューをし書籍にするなど編集技術を学ぶ。<br>
+      私は電子音楽が好きなので野田努氏にインタビューをした。<br> <br> 
 
       2003 ドイツ ハンブルク ハインターコンチギャラリーにて個展<br> 
       
@@ -121,7 +118,7 @@
     シンギュラリティ大学などの文献検索で、発展や新技術への投資、さらに今後はどう便利になるかを検索し、新技術に期待している。
       また、農業系IoTや、スピン流発電が気になっている。<br> 
       <br> 
-      踊れる音楽、フードコーディネイト、旅、お茶が好きです。<br> 
+      踊れる音楽、フードコーディネイト、旅、お茶、もちろん新技術が好きです。<br> 
       どうぞよろしくお願いいたします。</span><br><br><br><br><br>
       <div><a href="./img/WTrireki.pdf" target="blank" class="normal_btn centering">私の履歴書PDFをダウンロード</a><br>
         <a href="https://www.izumo-kankou.gr.jp/213" target="blank" class="normal_btn centering">稲佐の浜はこちら</a></div><br><br><br>
@@ -131,7 +128,7 @@
 <div class="height20"></div>
 <div class="clear_box"></div>
 <br><br>
-<div id="works"class="works-list">
+<div id="works"class="works-list animate">
         <div class="vertical-title"><span class="tex-line">WORKS</span></div>
         <div class="inner-photo">
           <div class="sliderw">
@@ -142,7 +139,7 @@
             </div>
         <div class="slick-outer"><img class="slide-img" src="./img/Poster-mockup02.jpg" alt="">
               <div class="slick-content"><span class="min-tex">lighthouse.inc</span><span class="max-tex">App</span>
-                <span class="middle-tex">UI/UX design</span><a href="https://play.google.com/store/apps/details?id=jp.lighthousetc.aga"><span class="middle-tex">Go App Store</span></a>
+                <span class="middle-tex">UI/UX design</span><a href="https://play.google.com/store/apps/dev?id=8095820798650074683"><span class="middle-tex">Go App Store</span></a>
                 </div></div>
         <div class="slick-outer"><img class="slide-img" src="./img/Poster-mockup03.jpg" alt="">
               <div class="slick-content"><span class="min-tex">lighthouse.inc</span><span class="max-tex">Demo</span>
@@ -209,9 +206,9 @@
   </div>  
 </div>
 <div class="clear_box"></div>
-
-
-  </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/scrollanim.js"></script>  
+</body>
   <footer id="footer02">
         <div>
           <div class="wrap">

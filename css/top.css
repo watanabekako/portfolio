@@ -214,7 +214,7 @@ table {
 
 /*ホバーアニメ*/
 /* ぼかしから出現 */
-.womologo:hover {
+ .blur{
     animation-name:blurAnime;
     animation-duration:3s;
     animation-fill-mode:forwards;
@@ -239,7 +239,27 @@ table {
   .blurTrigger{
       opacity: 0;
   }
+/* 左から */
 
+.fadeLeft{
+    animation-name:fadeLeftAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeLeftAnime{
+      from {
+        opacity: 0;
+      transform: translateX(-100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateX(0);
+      }
+    }
+    
 
 /*スライダー*/
 .slick-track{height: 10%;}
