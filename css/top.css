@@ -213,35 +213,33 @@ table {
     }
 
 /*ホバーアニメ*/
-
-.womologo:hover 
-{
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transform-style: preserve-3d;
-	
-}
-
-@keyframes slidein {
-  0% {
-transform: translateZ(0px) translateY(0px)translateX(0px)rotatex( 0deg)rotatey( 0deg);
+/* ぼかしから出現 */
+.womologo:hover {
+    animation-name:blurAnime;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes blurAnime{
+    from {
+    filter: blur(10px);
+    transform: scale(1.02);
+    opacity: 0;
+    }
+  
+    to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+    }
+  }
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+   
+  .blurTrigger{
+      opacity: 0;
   }
 
-  25% {
-transform: translateZ(60px)translateY(60px)translateX(10px)rotatex(5deg)rotatey( 5deg);
-  }
-	 50% {
-transform: translateZ(0px)translateY(0px)translateX(0px);
-  }
-	  75% {
-transform: translateZ(-10px)translateY(-10px)translateX(-10px);
-  }
-  100% {
-    transform: translateZ(0px) translateY(0px)translateX(0px)rotatex( 0deg)rotatey( 0deg);
-      }
-}
 
 /*スライダー*/
 .slick-track{height: 10%;}
