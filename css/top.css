@@ -44,6 +44,15 @@ table {
     text-align: left;
     margin-bottom: 150px;
 }
+
+.motion_list {
+  padding-left: 120px;
+  color: #101785;
+  
+  float: left;
+  text-align: left;
+  padding-bottom: 50px;
+}
 .clear_box {
     clear:  both;   
     margin-bottom: 50px;            /* 回り込みを解除する */
@@ -69,7 +78,7 @@ table {
     color: #101785;
     text-align: left;
     flex-wrap: wrap;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 .works-list-me {
     display: flex;
@@ -78,6 +87,50 @@ table {
     flex-wrap: wrap;
 }
 
+
+video {
+  width: 100%;
+  max-width: 500px; /* 最大でも400px以下に */
+}
+.motion_main {
+  width: 100%;
+  min-width: 640px;
+ 
+}
+@media screen and (min-width: 1200px){
+  .motion_main {
+  
+    width: 100%;
+    min-width: 1200px;
+  }
+  }
+  @media screen and (min-width: 640px){
+    .motion_main{
+     
+      width: 100%;
+      min-width: 640px;
+    }
+    }
+
+.pic_frame {
+   display:flex;
+    text-align: center;
+   
+}
+@media screen and (min-width: 1200px){
+  .pic_frame {
+    display:flex;
+    text-align: center;
+    
+  }
+  }
+  @media screen and (min-width: 640px){
+    .pic_frame {
+      display:flex;
+      text-align: center;
+      
+    }
+    }
 
 .tex-line
 {
@@ -137,7 +190,7 @@ table {
     padding:  50px;
 }
 
-/* 何でもセンター */
+/* センター */
 .centering{
     display: flex;
     justify-content: center;
